@@ -1,0 +1,107 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+
+.listContainer {
+
+    padding: 20px;
+
+    list-style-type: decimal;
+
+    margin-top: 10px;
+
+
+
+
+}
+
+.listContainer li {
+
+    font-size: 20px;
+
+    background-color: steelblue;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    width: 30%;
+
+    margin-bottom: 10px;
+
+}
+
+.deleteBtn {
+
+    background-color: steelblue;
+
+    outline: none;
+
+    border: none;
+
+    font-size: 18px;
+
+    margin-left: 100px;
+
+    padding: 5px;
+
+    border: 1px solid black;
+
+    border-radius: 5px;
+
+
+
+}
+
+.deleteBtn:hover {
+
+    color: white;
+
+
+
+}
+
+.itemInput {
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    margin-right: 5px;
+
+}
+
+.AddItem {
+
+    border: 1px solid steelblue;
+
+    background: none;
+
+    outline: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+}
+
+.AddItem:hover {
+
+    background-color: steelblue;
+
+    padding: 10px 25px;
+
+    color: white;
+
+    transition: all ease-in-out 0.5s;
+
+}
