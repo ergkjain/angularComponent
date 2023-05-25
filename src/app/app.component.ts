@@ -25,8 +25,6 @@ export class AppComponent {
   } = {}
 
 
-
-
   public addItem(){
 
     this.listObjects.push({
