@@ -1,19 +1,19 @@
 <div class="container">
 
-    <input type="text" class="itemInput" [(ngModel)]="listValue.name">
+  <input type="text" class="itemInput" [(ngModel)]="listValue.name">
 
   <button class="AddItem" (click)="addItem()">Add</button>
 
-    <ul class="listContainer">
+  <ul class="listContainer">
 
-        <li *ngFor="let item of listObjects">{{item.name}}
+    <li *ngFor="let item of listObjects">{{item.name}}
 
-            
+    
 
-            <button class="deleteBtn" (click)="deleteItem(item.index)">Delete</button>
+      <button class="deleteBtn" (click)="deleteItem(item.index)">Delete</button>
 
-          </li>
+      </li>
 
-      </ul>
+    </ul>
 
 </div>
