@@ -2,56 +2,53 @@ import { Component } from '@angular/core';
 
 @Component({
 
-  selector: 'app-root',
+selector: 'app-root',
 
-  templateUrl: './app.component.html',
+templateUrl: './app.component.html',
 
-  styleUrls: ['./app.component.css']
+styleUrls: ['./app.component.css']
 
 })
 
 export class AppComponent {
 
-  title = 'List';
+title = 'List';
 
-  listObjects : any[]= [];
+listObjects : any[]= [];
 
-  listValue :{
+listValue :{
 
-    name? : String,
+name? : String,
 
-    index? : number
+index? : number
 
-  } = {}
+ } = {}
 
 
-  public addItem(){
+ public addItem(){
 
-    this.listObjects.push({
+ this.listObjects.push({
 
-      name : this.listValue.name,
+ name : this.listValue.name,
 
-      index : this.listObjects.length + 1
-
-    });
-
-  }
+ index : this.listObjects.length + 1
+ });
+ }
 
 
 
 
-  public deleteItem(index: number){
+ public deleteItem(index: number){
 
-    for(let i =0 ;i<this.listObjects.length;i++){
+ for(let i =0 ;i<this.listObjects.length;i++){
+ if(this.listObjects[i].index === index){
 
-      if(this.listObjects[i].index === index){
+ this.listObjects.splice(index-1, 1);
 
-        this.listObjects.splice(index-1, 1);
+ }
 
-      }
+ }
 
-    }
-
-  }
+ }
 
 }
